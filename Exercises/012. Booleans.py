@@ -1,8 +1,8 @@
 person = "Alex"
 age = 68
 
-isOfLegalAge = age >= 18 # boolean value to see if a person is of legal age
-isAnElder = age >= 65
+isOfLegalAge = age >= 18  # boolean to see if a person is of legal age
+isAnElder = age >= 65   # boolean to see if a person is an elder
 
 if isOfLegalAge and isAnElder:  # Checks if both statements are true at the same time
     print(f"{person} is of legal age and also an elder")
