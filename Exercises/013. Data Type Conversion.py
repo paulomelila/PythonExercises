@@ -32,7 +32,7 @@ print(f"Your average grade is: {average:.2f}")
 # converts user inputs to int, float and bool
 integer = int (input("Type an integer number: "))
 floating = float (input("Type a floating number: "))
-boolean = input("Type a boolean value (True/False): ").lower()  # lowers all cases
+boolean = input("Type a boolean value (True/False): ").lower().strip()  # lowers all cases and removes spaces
 
 boolean = (boolean == "true")  # checks if the input was "true"
 
