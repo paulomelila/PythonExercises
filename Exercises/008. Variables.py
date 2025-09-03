@@ -5,7 +5,6 @@ Integers (int): Whole numbers, positive or negative, without a decimal point
 Floats (float): Numbers with a decimal point, representing real numbers
 Strings (str): Sequences of characters, enclosed in single or double quotes.
 Booleans (bool): Represent truth values, either True or False.
-
 """
 
 name = "Albert"  # String (str)
