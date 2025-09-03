@@ -2,7 +2,7 @@
 age_str = "25"
 height_str = "1.81"
 
-# conversion of stypes
+# conversion of types
 age = int(age_str)  # converts string to integer
 height = float(height_str)  # converts string to float
 
