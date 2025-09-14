@@ -1,10 +1,29 @@
 """
+Ask for user's name and print each letter on a new line.
+Strings in Python are iterable, meaning we can loop through each character in the string.
+"""
+print("Print each letter of your name on a new line:")
+name = input("What is your name? ")
+for letter in name:
+    print(letter)
+print("\n")
+
+"""
+Loop that prints each name in a list.
+Lists in Python are iterable, meaning we can loop through each item in the list.
+"""
+print("Print each name in a list:")
+name_list = ["Albert", "Beth", "Charlie", "Diana"]
+for name in name_list:
+    print(name)
+print("\n")
+
+"""
 Loop that prints numbers in range of 10.
-loops start at zero and go to one less than the range size
+Range loops start at zero and go to one less than the range size
 so a range (10) would start at 0 and stop at 9.
 to print 1 -> 10, we have to add +1
 """
-
 print("0 -> 9:")
 
 for i in range (10):
@@ -31,9 +50,19 @@ for i in range(10):
 print("\n")
 
 """
+The initial and final values of the range can be manually set.
+The range function can take a third argument that sets the step/increment value.
+The final value is exclusive, so the loop stops before reaching it.
+"""
+print("1 -> 9 (step: 2):")
+for item in range(1, 9, 2):  # for loop that starts at 1, ends before 10, and increases by 2
+    print(item)
+print("\n")
+
+"""
 Loop that increases the counter.
 """
-
+print("Counter loop using while:")
 counter = 0 # sets counter to zero
 while counter < 5: # while counter is at 0->4 the loop will run
     print("Counter is", counter)
