@@ -20,12 +20,17 @@ print("\n")
 
 """
 Loop that prints the square of each number in a list.
+Also calculates the sum of the numbers in the list.
 """
 print("Print the square of each number in a list:")
 number_list = [1, 2, 3, 4, 5]
 print("Number list:", number_list, sep=" ")
 for number in number_list:
     print(f"The square of {number} is {number ** 2}")
+sum = 0
+for number in number_list:
+    sum += number
+print("The sum of the numbers in the list is", sum)
 print("\n")
 
 """
