@@ -1,9 +1,21 @@
 # defining a function that returns the result of the sum between two given numbers
 def sum_of_two_numbers(a, b):
     return a + b
+# defining a function that returns the result of the substraction between two given numbers
+def substraction_of_two_numbers(a, b):
+    return a - b
 
-# creating a variable that stores the result of the function
-result = sum_of_two_numbers(56, 25)
+# asking the user for two numbers
+first_number = int(input("Enter the first number: "))
+second_number = int(input("Enter the second number: "))
+
+# asking the user for an option to choose between sum or substraction
+option = int(input("Enter '1' for sum or '2' for substraction: "))
 
 # printing the result
-print("The result of the sum is:", result)
+if option == 1: # if user chose option 1, perform sum
+    print("{} + {} =".format(first_number, second_number), sum_of_two_numbers(first_number, second_number))
+elif option == 2: # if user chose option 2, perform substraction
+    print(f"{first_number} - {second_number} =", substraction_of_two_numbers(first_number, second_number))
+else:
+    print("Invalid option")
