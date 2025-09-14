@@ -19,3 +19,9 @@ elif option == 2: # if user chose option 2, perform substraction
     print(f"{first_number} - {second_number} =", substraction_of_two_numbers(first_number, second_number))
 else:
     print("Invalid option")
+
+# use of default parameters in functions
+def greet(name="Guest"): # default value is "Guest" if no name is provided
+    print(f"Hello, {name}!")
+greet() # calls the function without an argument, uses default value
+greet("Paulo") # calls the function with an argument, overrides default value
