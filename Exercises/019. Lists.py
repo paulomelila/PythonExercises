@@ -5,7 +5,7 @@ print(list_of_months)
 # accessing individual elements by index
 print(f"{list_of_months[0]} is the first month of the year.") # prints first element
 
-# adds an element to the end of the list
+# adds an element to the end of the list and prints the updated list
 print("Adding June to the list of months.")
 list_of_months.append("June")
 print(list_of_months)
