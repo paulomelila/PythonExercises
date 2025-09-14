@@ -8,9 +8,7 @@ for letter in name:
     print(letter)
 print("\n")
 
-"""
-Loop that counts occurrences of a specific letter in a word.
-"""
+# Loop that counts occurrences of a specific letter in a word.
 print("Count occurrences of a specific letter in a word:")
 text = "programming"
 letter_to_find = "r"
@@ -89,12 +87,34 @@ for item in range(1, 9, 2):  # for loop that starts at 1, ends before 10, and in
     print(item)
 print("\n")
 
-"""
-Loop that prints the multiplication table of a number.
-"""
+# Loop that prints the multiplication table of a number.
 number = int(input("Enter a number to find its multiplication table: "))
 print(f"Multiplication table of {number}:")
 
 for i in range(1, 11):
     print(f"{number} x {i} = {number * i}")
 print("\n")
+
+# Loop that prints even numbers from 1 to 10.
+print("Even numbers from 1 to 10:")
+for number in range(1, 11):
+    if number % 2 != 0:
+        continue # skip odd numbers
+    print(number)
+print("\n")
+
+# Loop that skips the number 5 when printing numbers from 0 to 9
+print("Numbers from 0 to 9, skipping 5:")
+for number in range(10):
+    if number == 5:
+        continue # skip the number 5
+    print(number)
+print("\n")
+
+# Loop that prints odd numbers from 1 to 10.
+print("Odd numbers from 1 to 10:")
+for number in range (1, 11):
+    if number % 2 == 0:
+        pass
+    else:
+        print(number)
