@@ -19,6 +19,16 @@ for name in name_list:
 print("\n")
 
 """
+Loop that prints the square of each number in a list.
+"""
+print("Print the square of each number in a list:")
+number_list = [1, 2, 3, 4, 5]
+print("Number list:", number_list, sep=" ")
+for number in number_list:
+    print(f"The square of {number} is {number ** 2}")
+print("\n")
+
+"""
 Loop that prints numbers in range of 10.
 Range loops start at zero and go to one less than the range size
 so a range (10) would start at 0 and stop at 9.
