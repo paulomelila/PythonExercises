@@ -9,6 +9,21 @@ for letter in name:
 print("\n")
 
 """
+Loop that counts occurrences of a specific letter in a word.
+"""
+print("Count occurrences of a specific letter in a word:")
+text = "programming"
+letter_to_find = "r"
+counter = 0
+
+for letter in text:
+    if letter == letter_to_find:
+        counter += 1
+
+print(f"The letter '{letter_to_find}' appears {counter} times in the word '{text}'.")
+print("\n")
+
+"""
 Loop that prints each name in a list.
 Lists in Python are iterable, meaning we can loop through each item in the list.
 """
@@ -75,6 +90,16 @@ for item in range(1, 9, 2):  # for loop that starts at 1, ends before 10, and in
 print("\n")
 
 """
+Loop that prints the multiplication table of a number.
+"""
+number = int(input("Enter a number to find its multiplication table: "))
+print(f"Multiplication table of {number}:")
+
+for i in range(1, 11):
+    print(f"{number} x {i} = {number * i}")
+print("\n")
+
+"""
 Loop that increases the counter.
 """
 print("Counter loop using while:")
@@ -82,3 +107,11 @@ counter = 0 # sets counter to zero
 while counter < 5: # while counter is at 0->4 the loop will run
     print("Counter is", counter)
     counter += 1 # increases the counter value for the next loop
+
+
+
+
+s = 0
+for i in range(5):
+    s += i * 3
+print(s)
