@@ -40,7 +40,7 @@ for key, value in my_dictionary.items():
     print(f"{key}: {value}")
 
 # checking if a key exists in the dictionary
-key_search = input("Enter the key you want to search: ").capitalize()  # capitalizes the first letter to match the key format
+key_search = input("Enter the key you want to search: ").lower().capitalize()  # normalize input to match key format
 if key_search in my_dictionary:
     print(f"The key '{key_search}' exists in the dictionary. Its value is:", my_dictionary[key_search])
 else:
