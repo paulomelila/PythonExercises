@@ -1,10 +1,12 @@
-# a simple program to determine if someone is of legal age (+18)
+# a simple program analyzes user's age and prints a message based on the age group
+age = int(input("How old are you? ")) # ask for user's age and turn it into an integer value
 
-age = input("How old are you? ") # ask for user's age
-age = int(age) # turns the answer into an integer value
-
-# conditional statement that analyzes if user is >= 18 years old
-if age >= 18:
-    print("You are of legal age.") # user's age is >= 18
+# conditional statement that prints different messages based on age
+if age <= 12:
+    print("You are a child.")
+elif age <= 19:
+    print("You are a teenager.")
+elif age <= 65:
+    print("You are an adult.")
 else:
-    print("You are not old enough.") # user's age is < 18
+    print("You are an elder.")
