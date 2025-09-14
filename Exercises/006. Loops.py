@@ -107,11 +107,3 @@ counter = 0 # sets counter to zero
 while counter < 5: # while counter is at 0->4 the loop will run
     print("Counter is", counter)
     counter += 1 # increases the counter value for the next loop
-
-
-
-
-s = 0
-for i in range(5):
-    s += i * 3
-print(s)
