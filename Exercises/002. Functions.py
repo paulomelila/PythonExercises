@@ -25,3 +25,12 @@ def greet(name="Guest"): # default value is "Guest" if no name is provided
     print(f"Hello, {name}!")
 greet() # calls the function without an argument, uses default value
 greet("Paulo") # calls the function with an argument, overrides default value
+
+# example of a recursive function that prints numbers from x down to 1
+def regressive(x):
+    if x <= 0:
+        return
+    else:
+        print(x)
+        regressive(x - 1)
+regressive(5) # calls the recursive function starting from 5
