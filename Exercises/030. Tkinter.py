@@ -1,9 +1,7 @@
 # exploration of tkinter module
 # A simple GUI application with a button and labels
 # Import the tkinter module
-from email.policy import default
 from tkinter import * # Import everything from the tkinter module
-from tkinter import messagebox # Import the messagebox module from tkinter
 
 mainWindow = Tk() # Create the main window
 mainWindow.title("My First GUI") # Set the title of the window
